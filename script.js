@@ -111,3 +111,7 @@ document.addEventListener("click", function (event) {
     currentCard = null; 
   }
 });
+
+
+
+

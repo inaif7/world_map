@@ -116,6 +116,7 @@ h3 {
 
 .red {
     color: red;
+    border: 1px solid red;
 }
 
 .green {
@@ -124,4 +125,68 @@ h3 {
 
 .blue {
     color: blue;
+}
+
+
+
+.bottom-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch; /* Changed to stretch to make all items of equal height */
+    margin-top: 1rem;
+}
+
+.red-bottom-card, .blue-bottom-card, .green-bottom-card {
+    /* color: red;  */
+    /* border: 1px solid red;  */
+    text-align: center;
+    width: 33%;
+    height: 500px; /* Fixed height, adjust as needed */
+    overflow: auto; /* Handles overflow of text */
+    padding: 20px; /* Optional, for internal spacing */
+    box-sizing: border-box; /* Ensures padding and border are included in width and height */
+}
+.green-bottom-card h1 {
+    color: green;
+}
+.blue-bottom-card h1 {
+    color: blue;
+}
+.red-bottom-card h1 {
+    color: red;
+}
+
+.green-bottom-card::-webkit-scrollbar {
+    width: 2px;
+}
+
+.green-bottom-card::-webkit-scrollbar-track {
+    background: none; 
+}
+
+.green-bottom-card::-webkit-scrollbar-thumb {
+    background: green; 
+}
+.blue-bottom-card::-webkit-scrollbar {
+    width: 2px;
+}
+
+.blue-bottom-card::-webkit-scrollbar-track {
+    background: none; 
+}
+
+.blue-bottom-card::-webkit-scrollbar-thumb {
+    background: blue; 
+}
+.red-bottom-card::-webkit-scrollbar {
+    width: 2px;
+}
+
+.red-bottom-card::-webkit-scrollbar-track {
+    background: none; 
+}
+
+.red-bottom-card::-webkit-scrollbar-thumb {
+    background: red;
 }
